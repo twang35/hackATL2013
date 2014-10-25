@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-startup-image" href="/img/custom_icon_precomposed.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="img/custom_icon_precomposed.png">
+
+  <title>Videos | hackATL | Nov. 22-24</title>
+  <script type="text/javascript">
+    function OpenLink(theLink){
+        window.location.href = theLink.href;
+      }
+  </script><!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template -->
+  <link href="jumbotron.css" rel="stylesheet" type="text/css">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class ="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=
+        ".navbar-collapse"></button> <a class="navbar-brand" href="index.html" onclick=
+        "OpenLink(this); return false"><img src=
+        "http://ecee981956945448fbaa-137b1647cd8bbf29b05687816fc93f23.r67.cf2.rackcdn.com/hackATLLogo2.png"
+        atl="hackATL" width="60" height="20"></a>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="about.html" onclick=
+          "OpenLink(this); return false">About</a></li>
+
+          <li><a href="schedule.html" onclick=
+          "OpenLink(this); return false">Schedule</a></li>
+
+          <li><a href="faq.html" onclick="OpenLink(this); return false">FAQ</a></li>
+
+          <li><a href="register.php" onclick=
+          "OpenLink(this); return false">Register</a></li>
+
+          <li><a href="sponsor.html" onclick=
+          "OpenLink(this); return false">Sponsor</a></li>
+          
+          <li class="active"><a href="winners.html" onclick=
+          "OpenLink(this); return false">Winners</a></li>
+
+          <li><a href="videos.html" onclick="OpenLink(this); return false">Videos</a></li>
+
+          <li><a href="contact.html" onclick=
+          "OpenLink(this); return false">Contact</a></li>
+        </ul>
+
+        <form class="navbar-form navbar-right" method="post" action="">
+          <!-- <button type="submit" class="btn btn-success" name="Submit1" -->
+        <div href="2013/login.php"><button type="button" class="btn btn-default" id="signin">Log in</button></div>
+          <!-- <a href="http://hackatl.org/2013/login.php"><button type="button" class="btn btn-default" id="signin">Log in</button></a> -->
+           <!-- Modal -->
+
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby=
+          "myModalLabel" aria-hidden="true" data-backdrop="false">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden=
+                  "true">&#215;</button>
+
+                  <h4 class="modal-title" id="myModalLabel">Our Apologies</h4>
+                </div>
+
+                <div class="modal-body">
+                  Login will be available on November 18, 2013
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss=
+                  "modal">Close</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+        </form>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </div><script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript">
+</script><script type="text/javascript">
+
+  $( document ).ready(function() {
+    $('#myModal').bind('hidden.bs.modal', function () {
+  $("html").css("margin-right", "0px");
+  });
+  $('#myModal').bind('show.bs.modal', function () {
+  $("html").css("margin-right", "-15px");
+  });
+  });
+  </script><!-- Main jumbotron for a primary marketing message or call to action -->
+
+  <div class="container page-header">
+    <h1>hackATL Winners & Prizes<br>
+    <small>&nbsp;don't be shy.</small></h1>
+  </div>
+  <div class="container">
+      <div>
+        <h1><text class="text-success">1st</text> Place</text><small><text style="color:red;padding-left:2em;">$1000</text></small></h1>
+        <a href="presentations/scenter.pdf"><h2>Scenter</h2><p>A geofencing platform for microblogging</p></a>
+        <h5>David Fink, Denis Savenkov, Yu Wang</h5>
+      </div>
+      <div>
+        <h1><text class="text-success">2nd</text> Place</text><small><text style="color:red;padding-left:2em;">$500</text></small></h1>
+        <a href="presentations/ritepei.pdf"><h2>RitePei</h2><p>A SaaS payment incentive engine that guarantees merchants to get paid better, faster than they currently are. By offering tailored payment incentives, it helps merchants increase revenue collection with no up front costs. When companies have high receivables or collections and are in need of motivating their customers to pay, they contact RitePei.</p></a>
+        <h5>Kleon Kita, Olgert Denas, Orgesi Pandeli</h5>
+      </div>
+      <div>
+        <h1><text class="text-success">3rd</text> Place</text><small><text style="color:red;padding-left:2em;">$250</text></small></h1>
+        <a href="presentations/fanboy.pdf"><h2>Fanboy</h2><p>Interactive platform for sports team fans that increases user experience at games and rewards fan loyalty</p></a>
+        <h5>Evan Solomon, Dhananjai Bagrodia, Kevin Lewis</h5>
+      </div>
+      <div>
+        <h1><text class="text-success">4th</text> Place</text><small><text style="color:red;padding-left:2em;">$250</text></small></h1>
+        <a href="#"><h2>Gage</h2><p>A game that test players on how well they know their friends, community, and society to collects market research data unobtrusively</p></a>
+        <h5>James Ding, HyoYul Byun, Robert Chen, Michael Sacks, Michael Kraower, Karoline Porcello, Austin Dong</h5>
+      </div>
+      <div>
+        <h1>Fan Award</h1>
+        <a href="presentations/piques.pdf"><h2>piqu.es</h2><p>Everything you love about window shopping – all on your phone. Piques will find your next favorite purchase or gift -- one temptation at a time. It's a curated shopping experience at the speed of swipe!</p></a>
+        <h5>Neil Sethi, Brendan Isham, Shivani Negi, Jordan Lewis, Peter Park, Calvin Truong, Jordan Francis, Stanley Chiang</h5>
+      </div>
+    </div>
+  <hr>
+
+  <div class="container">
+    <div class="pull-left">
+      <p>&#169; 2013 hackATL | <a href="http://eevm.org">Emory Entrepreneurship &amp;
+      Venture Management</a> | <a href="http://emory.edu">Emory University</a></p>
+    </div>
+
+    <div class="pull-right">
+      <a href="http://www.facebook.com/hackatl"><img src="img/facebook.png" alt=
+      "Facebook" width="50" height="50"></a>&nbsp;&nbsp;<a href=
+      "http://www.twitter.com/hackatl"><img src="img/twitter.png" alt="Twitter" width=
+      "50" height="50"></a>
+    </div>
+  </div><!-- /container -->
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery.js" type="text/javascript">
+</script><script src="dist/js/bootstrap.min.js" type="text/javascript">
+</script>
+</body>
+</html>

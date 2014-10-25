@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <link rel="shortcut icon" href="img/favicon.png">
+
+   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-startup-image" href="/img/custom_icon_precomposed.png">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="img/custom_icon_precomposed.png">
+
+    <title>About | hackATL | Nov. 22-24</title>
+
+    <script type="text/javascript">
+      function OpenLink(theLink){
+        window.location.href = theLink.href;
+      }
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" onclick="OpenLink(this); return false"><img src = "http://ecee981956945448fbaa-137b1647cd8bbf29b05687816fc93f23.r67.cf2.rackcdn.com/hackATLLogo2.png" atl = "hackATL" width = "60" height = "20"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+
+            <li class="active"><a href="about.html" onclick="OpenLink(this); return false">About</a></li>
+            <li><a href="schedule.html" onclick="OpenLink(this); return false">Schedule</a></li>
+            <li><a href="faq.html" onclick="OpenLink(this); return false">FAQ</a></li>
+            <li><a href="register.php" onclick="OpenLink(this); return false">Register</a></li>
+            <li><a href="sponsor.html" onclick="OpenLink(this); return false">Sponsor</a></li>
+            <li><a href="winners.html" onclick="OpenLink(this); return false">Winners</a></li>
+            <li><a href="videos.html" onclick="OpenLink(this); return false">Videos</a></li>
+            <li><a href="contact.html" onclick="OpenLink(this); return false">Contact</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" method=post action="">
+            <!-- <button type="submit" class="btn btn-success" name="Submit1" -->
+            
+            <div href="2013/login.php"><button type="button" class="btn btn-default" id="signin">Log in</button></div>
+            
+            <!-- <a href="http://hackatl.org/2013/login.php"><button type="button" class="btn btn-default" id="signin">Log in</button></a> -->
+
+            <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Our Apologies</h4>
+      </div>
+      <div class="modal-body">
+        Login will be available on November 18, 2013
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+            </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script>
+ 
+  $( document ).ready(function() {
+    $('#myModal').bind('hidden.bs.modal', function () {
+  $("html").css("margin-right", "0px");
+});
+$('#myModal').bind('show.bs.modal', function () {
+  $("html").css("margin-right", "-15px");
+});
+  });
+  </script>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+    	<div class="page-header">
+  			<h1>About hack<text class="text-success">ATL</text><br><small> &nbsp;a little introduction.</small></h1>
+		</div>
+	</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+    	     <!--<p class="lead"><text class="text-success">
+           <i>hack·a·thon</i> | ˈhakəˌTHän/ | noun</text><br>An event, typically lasting several days, in which groups of developers, business people, startup enthusiasts, marketing gurus, and graphic artists pitch ideas for new startup companies.</p>  
+    	     <blockquote><p>For three consecutive days creative minds, entrepreneurs, and techies will come together and form teams to work on their ideas at one of the top 20 universities in the US, with one of the top 10 business schools. On the last day teams will present their venture ideas to a jury panel consisting of venture capitalists and industry professionals. The winners, of course, will receive prizes.</p></blockquote>
+         -->
+           <p class="lead"><text class="text-success">
+           <b>Build A Business in 48 Hours</b></p>
+           <!--
+            <ul><h4><b>
+              <li>48 hours of madness</li>
+              <li>200+ contributors</li>
+              <li>$2000 in prizes</li>
+            </b></h4></ul><br>
+           <p>
+            From November 22-24 Emory Entrepreneurship and Venture Management (EEVM) is hosting hack<text class = "text-success">ATL</text>. Participants from all over will come together to learn about startups, innovation, and entrepreneurship while expanding their business acumen. hack<text class = "text-success">ATL</text> allows individuals to simulate a startup for a weekend, without the risks often associated with creating a corporation. At the end of the weekend, participants present their business plans to VC’s and local entrepreneurs. These business experts serve as judges who provide insightful feedback to the participants about their startup proposal, teamwork, and how to better approach entrepreneurship. The judges will also award cash prizes to the teams with the most promising ideas so they can pursue their startup. hack<text class = "text-success">ATL</text> <b>is also one of the first hackathons to incorporate technology, design and business and has drawn in sponsors such as Atlanta Tech Village, Uber, Zipcar, RedBull, Rivalry, TEDxEMORY, SalesLoft, CallRail, Rigot, Campus Bubble, College Council and more.</b>
+          -->
+            <p>Emory Entrepreneurship and Venture Management (EEVM) is proud to host hack<text class="text-success">ATL</text> 2013.<br><br>
+
+            Instead of a traditional hackathon, we decided to bring together a variety of skill-sets under the same roof. By combining <text class="text-success">business, technology and design</text>, these projects will have the best chance of thriving beyond the weekend and become the next big startup. <br><br>
+
+            Participants will build a business in three days and present their startup to VC’s and local entrepreneurs.
+
+            If great ideas interest you, hack<text class = "text-success">ATL</text> is right for you.</p>
+           </p><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h2 class="panel-title">Why hack<text class="text-success">ATL</text>?</h2>
+            </div>
+            <div class="panel-body">
+            <p>For three consecutive days, hack<text class = "text-success">ATL</text> removes all barriers to innovation. By bringing together the brightest minds of Atlanta and providing them with all the resources needed, hack<text class = "text-success">ATL</text> helps you take the plunge and creates enough momentum to sustain a company beyond the weekend.</p>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h2 class="panel-title">Not a techie? Don't Worry.</h2>
+            </div>
+            <div class="panel-body">
+            <p>Hackathons are not only for the techie. If you have any idea, big or small, that you want to turn into something real - hack<text class="text-success">ATL</text> is for you.</p>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h2 class="panel-title">When and Where?</h2>
+            </div>
+            <div class="panel-body">
+            <p>
+              <b>When:</b> Friday November 22, 2013 at 5pm until Sunday November 24, 2013 at 3pm<br>
+              <b>Where:</b> Emory University's Goizueta Business School (1300 Clifton Rd NE, Atlanta, GA 30322)
+            </p>
+            </div>
+          </div>
+		  
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h2 class="panel-title">How do I get involved?</h2>
+            </div>
+            <div class="panel-body">
+            <a href= "register.php"  onclick="OpenLink(this); return false"><button type="button" class="btn btn-primary btn-xs">Register now!</button></a>
+            </div>
+          </div>
+      </div>
+    	<!-- <h3>What can hack<text class="text-success">ATL</text> offer you?</h3>
+    	<p>NEED CONTENT</p>
+    	<h3>Sample Calendar of Events</h3>
+    	<p>NEED CONTENT</p> -->
+      </div>
+    </div>
+
+	
+      <hr>
+	
+	<div class="container">
+      <footer>
+        <div class="pull-left"><p>&copy; 2013 hack<text class="text-success">ATL</text> | <a href="http://eevm.org">Emory Entrepreneurship & Venture Management</a> | <a href="http://emory.edu">Emory University</a></p></div>
+        <div class="pull-right">
+          <a href="http://www.facebook.com/hackatl"><img src="img/facebook.png" alt="Facebook" width="50" height="50"></a>&nbsp;&nbsp;<a href="http://www.twitter.com/hackatl"><img src="img/twitter.png" alt="Twitter" width="50" height="50"></a></div>
+        </div>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.sponsor-img{
+	opacity: .5;
+	width: 262.5px;
+	height: auto;
+	padding: 0px 30px 10px 30px;
+	margin-bottom: 40px;
+}
+
+.sponsor-img:hover{
+	opacity: 1;
+}
+
+.visible-lg{
+	.responsive-invisibility();
+  @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) { .responsive-invisibility(); }
+  @media (min-width: @screen-desktop) { .responsive-visibility(); }
+
+}
+
+.bs-callout {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+/* Variations */
+.bs-callout-danger {
+  background-color: rgba(253, 247, 247, .85);
+  border-color: #eed3d7;
+}
+.bs-callout-danger h1 {
+  color: #b94a48;
+  margin-top: 0;
+}
+.bs-callout-warning {
+  background-color: #faf8f0;
+  border-color: #faebcc;
+}
+.bs-callout-warning h1 {
+  color: #c09853;
+}
+.bs-callout-info {
+  background-color: #f4f8fa;
+  border-color: #bce8f1;
+}
+.bs-callout-info h1 {
+  color: #3a87ad;
+}

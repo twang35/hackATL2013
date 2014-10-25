@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-startup-image" href="/img/custom_icon_precomposed.png">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="img/custom_icon_precomposed.png">
+
+    <script type="text/javascript">
+      function OpenLink(theLink){
+        window.location.href = theLink.href;
+      }
+    </script>
+
+    <title>FAQ | hackATL | Nov. 22-24</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" onclick="OpenLink(this); return false"><img src = "http://ecee981956945448fbaa-137b1647cd8bbf29b05687816fc93f23.r67.cf2.rackcdn.com/hackATLLogo2.png" atl = "hackATL" width = "60" height = "20"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html" onclick="OpenLink(this); return false">About</a></li>
+            <li><a href="schedule.html" onclick="OpenLink(this); return false">Schedule</a></li>
+            <li class="active"><a href="faq.html" onclick="OpenLink(this); return false">FAQ</a></li>
+            <li><a href="register.php" onclick="OpenLink(this); return false">Register</a></li>
+            <li><a href="sponsor.html" onclick="OpenLink(this); return false">Sponsor</a></li>
+            <li><a href="winners.html" onclick="OpenLink(this); return false">Winners</a></li>
+            <li><a href="videos.html" onclick="OpenLink(this); return false">Videos</a></li>
+            <li><a href="contact.html" onclick="OpenLink(this); return false">Contact</a></li>
+          </ul>
+ <!--          <form class="navbar-form navbar-right" method=post action="">
+           <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-success" name="Submit1">Sign in</button></form>
+-->
+                     <form class="navbar-form navbar-right" method=post action="">
+            <!-- <button type="submit" class="btn btn-success" name="Submit1" -->
+            <div href="2013/login.php"><button type="button" class="btn btn-default" id="signin">Log in</button></div>
+            <!-- <a href="http://hackatl.org/2013/login.php"><button type="button" class="btn btn-default" id="signin">Log in</button></a> -->
+
+            <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Our Apologies</h4>
+      </div>
+      <div class="modal-body">
+        Login will be available on November 18, 2013
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+            </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script>
+ 
+  $( document ).ready(function() {
+    $('#myModal').bind('hidden.bs.modal', function () {
+  $("html").css("margin-right", "0px");
+});
+$('#myModal').bind('show.bs.modal', function () {
+  $("html").css("margin-right", "-15px");
+});
+  });
+</script>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    
+    <div class="container">
+    	<div class="page-header">
+  			<h1>Frequently Asked Questions<br><small> &nbsp;confused? don't be.</small></h1>
+		</div>
+	  </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      <h4><text class="text-success">Q: Who can participate?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: HackATL is open to everyone who has ideas and is innovative to transform them into a reality. Basically, everyone is allowed to attend.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      <h4><text class = "text-success">Q: How many people should be in a team?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: Teams should consist of 4 to 8 people. You are allowed to build a team before the competition, but there will be a networking event the first evening for you to meet other participants to create or expand your team, or to join an existing team.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      <h4><text class= "text-success">Q: How much does it cost?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: It is FREE to attend HackATL. There will also be FREE food and drinks.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                      <h4><text class="text-success">Q: Can we work all night at the venue?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: Yes. Hackathons are marathon events, so the venue will be open for the duration of the event for those that wish to work through the night though not required.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                      <h4><text class = "text-success">Q: I am not a developer, can I attend?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: Yes, we need people of all types to work on the ideas. In addition, we need designers, business analysts, advertisers, and a lot of raw passion.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                      <h4><text class= "text-success">Q: How can I participate?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: You can join a team as a programmer, business developer, and marketer. Or you can choose not to participate in a team, and just attend our free workshops led by renowned industry professionals and professors.
+                  </div>
+                </div>
+                </div>
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                      <h4><text class = "text-success">Q: What should I bring?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: Anything from laptops, power cables, extension cords, mobile phones, tablets to sharpies, sticky notes, and most of all, great ideas!
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                      <h4><text class= "text-success">Q: Do I need to print out and bring a ticket to get in?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseEight" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: No. If you have registered we already have your info and we will have your badge ready when you arrive.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                      <h4><text class= "text-success">Q: Is there an age limit for attendees?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseNine" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: No. From high schoolers to senior citizens, we expect attendees of all ages and all levels to be able to contribute.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                      <h4><text class= "text-success">Q: When do I form a team?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTen" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: You will be able to form teams at the start of the event.
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                      <h4><text class= "text-success">Q: How do I get to the Goizueta Business School?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse12" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    A: The building address is 1300 Clifton Road, Atlanta, GA 30322. For more detailed directions to the venue, check out https://secure.goizueta.emory.edu/aboutgoizueta/contact/maps_directions.html   
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                      <h4><text class= "text-success">Q: Where can I park?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse13" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Parking will be available for free on Friday starting at 4:30pm in the Fishburne lot. Parking on Saturday and Sunday is free.
+If you enter from the North Decatur side prior to 5pm mention that you are with HackATL to get free parking. If you enter from the Fishburne side it is free and the gate should be up.
+Fishburne Parking Deck
+1672 North Decatur Road
+Atlanta, GA 30322
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+                      <h4><text class= "text-success">Q: Will meals be provided?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse14" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Meals will be provided for competitors, speakers, and judges (check the schedule to look at the list of provided meals).  Workshop participants will be able to purchase lunch and snacks at Einstein Bros Bagels, located in the Goizueta Business School. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+                      <h4><text class= "text-success">Q: How late can I stay at the venue?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse15" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    The venue will be open the entire duration of the event. If you plan on staying overnight, please sign up on your account stating which nights you will be staying and remember to bring a sleeping bag and toiletries. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse16">
+                      <h4><text class= "text-success">Q: Where will my team work?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse16" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Once you’ve formed your team, we will assign your team to a work space. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse17">
+                      <h4><text class= "text-success">Q: Will there be mentors?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse17" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Yes, on Saturday you will have the opportunity to sign up for a time to work with mentors from various specializations.  
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse18">
+                      <h4><text class= "text-success">Q: What is the open pitch session?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse18" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    On Saturday evening your team will have the opportunity to pitch your idea to the general audience to receive feedback on how to further improve your product and business plan before official judging the following morning. 
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                      <h4><text class= "text-success">Q: What hotels are nearby?</text></h4>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse11" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>There is a variety to choose from. Some hotels in the area offer discounted rates for visitors to Emory University, so be sure to ask for the Emory rate if available.</p>
+                    <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=538
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=233 valign=top style='width:233.45pt;border:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>Lodging<o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=top style='width:75.35pt;border:solid #C1C1C1 1.0pt;
+  border-left:none;mso-border-left-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>Miles from campus<o:p></o:p></span></p>
+  </td>
+  <td width=167 valign=top style='width:167.45pt;border:solid #C1C1C1 1.0pt;
+  border-left:none;mso-border-left-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>Address<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.75pt;border:solid #C1C1C1 1.0pt;
+  border-left:none;mso-border-left-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>Phone<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=233 valign=top style='width:233.45pt;border:solid #C1C1C1 1.0pt;
+  border-top:none;mso-border-top-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><a href="http://www.emoryconferencecenter.com/"><span
+  style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:Times;
+  color:#C37E00;text-decoration:none;text-underline:none'>Emory Conference
+  Center Hotel and Emory Inn</span></a><span style='font-size:14.0pt;
+  font-family:Times;mso-bidi-font-family:Times'><o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=top style='width:75.35pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>1.2 miles<o:p></o:p></span></p>
+  </td>
+  <td width=167 valign=top style='width:167.45pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>1615 Clifton Rd.<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>Atlanta, GA 30329<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>404-712-6000&nbsp; <o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>888-933-6679<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=233 valign=top style='width:233.45pt;border:solid #C1C1C1 1.0pt;
+  border-top:none;mso-border-top-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><a
+  href="http://www.ihg.com/holidayinnexpress/hotels/us/en/decatur/atlde/hoteldetail"><span
+  style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:Times;
+  color:#C37E00;text-decoration:none;text-underline:none'>Holiday Inn Express
+  Atlanta-Emory Area</span></a><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'><o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=top style='width:75.35pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>1.5 miles<o:p></o:p></span></p>
+  </td>
+  <td width=167 valign=top style='width:167.45pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>2183 North Decatur Rd.<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>Atlanta, GA 30033<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>404-320-0888<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>877-863-4780<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=233 valign=top style='width:233.45pt;border:solid #C1C1C1 1.0pt;
+  border-top:none;mso-border-top-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><a
+  href="http://www.marriott.com/hotels/travel/atlep-courtyard-atlanta-executive-park-emory/"><span
+  style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:Times;
+  color:#C37E00;text-decoration:none;text-underline:none'>Courtyard by Marriott
+  Executive Park</span></a><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'><o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=top style='width:75.35pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>3.6 miles<o:p></o:p></span></p>
+  </td>
+  <td width=167 valign=top style='width:167.45pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>1236 Executive Park Dr. Atlanta, GA 30329<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>404-728-0708<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>800-321-2211<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=233 valign=top style='width:233.45pt;border:solid #C1C1C1 1.0pt;
+  border-top:none;mso-border-top-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><a
+  href="http://doubletree3.hilton.com/en/hotels/georgia/doubletree-by-hilton-hotel-atlanta-north-druid-hills-emory-area-ATLNDDT/index.html"><span
+  class=SpellE><span style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:
+  Times;color:#C37E00;text-decoration:none;text-underline:none'>DoubleTree</span></span><span
+  style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:Times;
+  color:#C37E00;text-decoration:none;text-underline:none'> by Hilton Hotel
+  Atlanta North Druid Hills-Emory Area</span></a><span style='font-size:14.0pt;
+  font-family:Times;mso-bidi-font-family:Times'><o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=top style='width:75.35pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>4.1 miles<o:p></o:p></span></p>
+  </td>
+  <td width=167 valign=top style='width:167.45pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>2061 N. Druid Hills Rd. Atlanta, GA 30329<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>404-321-4174<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>800-4458667<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=233 valign=top style='width:233.45pt;border:solid #C1C1C1 1.0pt;
+  border-top:none;mso-border-top-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><a
+  href="http://www.starwoodhotels.com/whotels/property/overview/index.html?propertyID=3131"><span
+  style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:Times;
+  color:#C37E00;text-decoration:none;text-underline:none'>W Atlanta-Midtown</span></a><span
+  style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:Times'><o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=top style='width:75.35pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>4.1 miles<o:p></o:p></span></p>
+  </td>
+  <td width=167 valign=top style='width:167.45pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>188 14th Street NE<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>Atlanta, GA 30361<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>404-892-6000<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>877-946-8357<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=233 valign=top style='width:233.45pt;border:solid #C1C1C1 1.0pt;
+  border-top:none;mso-border-top-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><a
+  href="http://hamptoninn3.hilton.com/en/hotels/georgia/hampton-inn-atlanta-north-druid-hills-ATLDHHX/index.html"><span
+  style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:Times;
+  color:#C37E00;text-decoration:none;text-underline:none'>Hampton Inn North
+  Druid Hills</span></a><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'><o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=top style='width:75.35pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>4.2 miles<o:p></o:p></span></p>
+  </td>
+  <td width=167 valign=top style='width:167.45pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>1975 North Druid Hills Rd. Atlanta, GA 30329<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>404-320-6600<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>800-426-8667<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=233 valign=top style='width:233.45pt;border:solid #C1C1C1 1.0pt;
+  border-top:none;mso-border-top-alt:solid #C1C1C1 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><a href="http://www.sheratonatlantahotel.com/"><span
+  style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:Times;
+  color:#C37E00;text-decoration:none;text-underline:none'>Sheraton Atlanta</span></a><span
+  style='font-size:14.0pt;font-family:Times;mso-bidi-font-family:Times'><o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=top style='width:75.35pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>5.1 miles<o:p></o:p></span></p>
+  </td>
+  <td width=167 valign=top style='width:167.45pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>165 Courtland St. NE<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>Atlanta, GA 30303<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #C1C1C1 1.0pt;border-right:solid #C1C1C1 1.0pt;
+  mso-border-top-alt:solid #C1C1C1 1.0pt;mso-border-left-alt:solid #C1C1C1 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>404-659-6500<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span style='font-size:14.0pt;font-family:Times;
+  mso-bidi-font-family:Times'>800-325-3535<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+	
+      <hr>
+	
+	<div class="container">
+      <footer>
+        <div class="pull-left"><p>&copy; 2013 hack<text class="text-success">ATL</text> | <a href="http://eevm.org">Emory Entrepreneurship & Venture Management</a> | <a href="http://emory.edu">Emory University</a></p></div>
+        <div class="pull-right">
+          <a href="http://www.facebook.com/hackatl"><img src="img/facebook.png" alt="Facebook" width="50" height="50"></a>&nbsp;&nbsp;<a href="http://www.twitter.com/hackatl"><img src="img/twitter.png" alt="Twitter" width="50" height="50"></a></div>
+        </div>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

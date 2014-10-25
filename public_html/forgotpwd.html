@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <script type="text/javascript">
+      function OpenLink(theLink){
+        window.location.href = theLink.href;
+      }
+    </script>
+
+    <title>Forgot Password | hackATL | Nov. 23-24</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" onclick="OpenLink(this); return false"><img src = "http://ecee981956945448fbaa-137b1647cd8bbf29b05687816fc93f23.r67.cf2.rackcdn.com/hackATLLogo2.png" atl = "hackATL" width = "60" height = "20"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="about.html" onclick="OpenLink(this); return false">About</a></li>
+            <li><a href="schedule.html" onclick="OpenLink(this); return false">Schedule</a></li>
+            <li><a href="faq.html" onclick="OpenLink(this); return false">FAQ</a></li>
+            <li><a href="register.php" onclick="OpenLink(this); return false">Register</a></li>
+            <li><a href="sponsor.html" onclick="OpenLink(this); return false">Sponsor</a></li>
+            <li><a href="videos.html" onclick="OpenLink(this); return false">Videos</a></li>
+            <li><a href="contact.html" onclick="OpenLink(this); return false">Contact</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" method=post action="">
+            <!-- <button type="submit" class="btn btn-success" name="Submit1" -->
+            
+            <a href="http://hackatl.org/2013/login.html"><button type="button" class="btn btn-default" id="signin">Log in</button></a>
+
+  
+
+            </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+    	<div class="page-header">
+  			<h1>Forgot Your Password?<br><small> &nbsp;recover your account now.</small></h1>
+		</div>
+	</div>
+
+    <div class="container">
+    	 <div class="row">
+          <div class="col-lg-8">
+            <div class="well">
+              <form class="bs-example form-horizontal" id="form" method=post action="function_php/forgetpassword.php">
+                <fieldset>
+                  <legend>Provide us with your username, then check your email for your temporary password. You will be able to create a new custom password once you login again.</legend>
+
+
+                  <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Email (Username)</label>
+                    <div class="col-lg-4">
+                      <input Name="email" type="text" class="form-control" id="inputEmail" placeholder="Email">
+                      
+                    </div>
+                    <button type="submit" class="btn btn-primary" Name = "Submit" VALUE = "Submit">Submit</button>
+                  </div>
+
+                  <!-- <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button type="submit" class="btn btn-primary" Name = "Submit" VALUE = "Submit">Submit</button> 
+                    </div>
+                  </div> -->
+                </fieldset>
+              </form>
+            </div>
+          </div>
+    	</div>
+    </div>
+    
+
+	
+      <hr>
+	
+	<div class="container">
+      <footer>
+        <div class="pull-left"><p>&copy; 2013 hack<text class="text-success">ATL</text> | <a href="http://eevm.org">Emory Entrepreneurship & Venture Management</a> | <a href="http://emory.edu">Emory University</a></p></div>
+        <div class="pull-right">
+          <a href="http://www.facebook.com/hackatl"><img src="img/facebook.png" alt="Facebook" width="50" height="50"></a>&nbsp;&nbsp;<a href="http://www.twitter.com/hackatl"><img src="img/twitter.png" alt="Twitter" width="50" height="50"></a></div>
+        </div>
+      </footer>
+    </div> <!-- /container -->
+    
+    
+    
+    	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

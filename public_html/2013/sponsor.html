@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Sponsor | hackATL | Nov. 22-24</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      function OpenLink(theLink){
+        window.location.href = theLink.href;
+      }
+    </script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  <script src="function_js/validate.js"></script>
+  </head>
+
+  
+  <body onLoad= "AutoValidation_sponsor_register(this)"> 
+
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" onclick="OpenLink(this); return false"><img src = "img/hackATLLogo2.png" atl = "hackATL" width = "60" height = "20"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" onclick="OpenLink(this); return false">Home</a></li>
+            <li><a href="bios.html" onclick="OpenLink(this); return false">Bios</a></li>
+            <li><a href="about.html" onclick="OpenLink(this); return false">About</a></li>
+            <li><a href="faq.html" onclick="OpenLink(this); return false">FAQ</a></li>
+            <li><a href="register.php" onclick="OpenLink(this); return false"> Register</a></li>
+            <li class="active"><a href="sponsor.html" onclick="OpenLink(this); return false">Sponsor</a></li>
+            <li><a href="contact.html" onclick="OpenLink(this); return false">Contact</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+<!--     <font color = "FFFFFF">
+ -->    	<div class="page-header">
+  			   <h1>Sponsor hack<text class="text-success">ATL</text><br><small> &nbsp;build a connection with us.</small></h1>
+		      </div>
+    </div> 
+    <div class="container">
+      <div class="row">
+      	<div class="col-md-8"
+        <p>Our pool of some of the brightest, youngest business and tech minds of the Southeast are eager to get to know you. hackATL provides an invaluable platform for companies to connect with innovative students and potential employees. Your role as a sponsor is pivotal in fostering the growing entrepreneurial spirit in Atlanta and in attracting young talent to your company in a way that’s beneficial for both you and the community.</p>
+		<p class="lead">Please complete our form or contact us at sponsorships@eevm.org to register as a sponsor.</p>
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+            <h3 class="list-group-item-heading">Bronze <text class = "text-success">($250 or more)</text></h3>
+            <p class="list-group-item-text">-Company logo on Hack<text class = "text-success">ATL</text> website<br>
+             -Recognition on Emory Entrepreneurship & Venture Management Website<br>
+             -Recognition in Program Guide</p>
+            </a>
+            <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Silver <text class = "text-success">($500 or more)</text></h3>
+            <p class="list-group-item-text">-Everything in the Bronze package<br>
+             -Company logo on event shirts<br>
+               -Logo on the Event Flyer and Hack<text class = "text-success">ATL</text> posters<br>
+               -Mentioned in Emory newspaper articles as a sponsor</p>
+               -Participant resume book
+            </a>
+            <a href="#" class="list-group-item active">
+            <h3 class="list-group-item-heading">Gold <text class = "text-success">($1000 or more)</text></h3></h3>
+            <p class="list-group-item-text">-Everything in the Silver package<br>
+             -Logo featured in our video productions of Hack<text class = "text-success">ATL</text><br>
+             -Speech opportunity at the introduction of the event<br>
+             -Appointed as a judge to select the winners on the final day<br>
+             </p>
+            </a>
+            <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Platinum <text class = "text-success">($2500 or more)</text></h3></h3>
+            <p class="list-group-item-text">Everything in the Gold package<br>
+             -Table sponsorship during all meals<br>
+             -Company booth available during event<br>
+             -Company press materials distributed to all event participants<br>
+             -Company logo displayed on podium<br>
+             -Job and internship advertisement distributed through mailing lists</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+        	<div class="well">
+        		<form role="form" id="form" method=post onSubmit = "return sponsor_register(this)" action="function_php/sponsor_register.php">
+  					<div class="form-group">
+                    	<label for="name">Contact Name</label>
+                      	<input type="text" Name ="contact_name"  class="form-control" id="name" placeholder="Contact Name">
+                  
+                  	</div>
+                  	<div class="form-group">
+                    	<label for="company">Company</label>
+               
+                      	<input type="text" Name ="company"  class="form-control" id="company" placeholder="Company">
+
+                  	</div>
+  					<div class="form-group">
+    					<label for="exampleInputEmail">Email address</label>
+    					<input type="email" name="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+  					</div>
+  					<div class="form-group">
+                    	<label for="phnumber">Phone number</label>
+                      	<input Name="phonenumber" type="tel" class="form-control" id="phnumber" placeholder="(123) 456-7890">
+                  	</div>
+
+                  	<div class="form-group">
+                  		<label for="spamount">Sponsorship amount</label>
+                  	<div class="input-group">
+  						<span class="input-group-addon">$</span>
+  						<input type="text" class="form-control" id="spamount" name="sponsor_amount">
+  						<span class="input-group-addon">.00</span>
+					</div>
+					</div>
+					<div class="form-group">
+						<label for="comments">Comments</label>
+						<textarea class="form-control" rows="8" id="comments" name="comments"></textarea>
+					</div>
+  					<button type="submit" class="btn btn-default">Submit</button>
+  				</form>
+  			</div>
+        </div>
+      </div>
+    </div>
+    		<!--<h2>Bronze ($250 or more)</h2>
+    		<p><h4>-Company logo on Hack<text class = "text-success">ATL</text> website<br>
+    			   -Recognition on Emory Entrepreneurship & Venture Management Website<br>
+    			   -Recognition in Program Guide</h4></p>
+    		<h2>Silver ($500 or more)</h2>
+    		<p><h4>-Everything in the Bronze package<br>
+    			   -Company logo on event shirts<br>
+    		  	   -Logo on the Event Flyer and Hack<text class = "text-success">ATL</text> posters<br>
+    		  	   -Mentioned in Emory newspaper articles as a sponsor</h4></p>
+    		<h2>Gold ($1000 or more)</h2>
+    		<p><h4>-Everything in the Silver package<br>
+    			   -Logo feature in our video productions of Hack<text class = "text-success">ATL</text><br>
+    			   -Speech opportunity at the introduction of the event<br>
+    			   -Appointed as a judge to select the winners on the final day<br>
+    			   -Participant resume book</h4></p>
+    		<h2>Platinum ($2500 or more)</h2>
+    		<p><h4>-Everything in the Gold package<br>
+    			   -Table sponsorship during all meals<br>
+    			   -Company booth available during event<br>
+    			   -Company press materials distributed to all event participants<br>
+    			   -Company logo displayed on podium<br>
+    			   -Job and internship advertisement distributed through mailing lists</h4></p>
+    			   </div> -->
+        	<!-- <div class="col-lg-6">
+    			<div class="pull-left"><img src="img/hackATLSponsorshipTiers1.png" alt="Sponsorship Tiers" width="550"></div>
+    		</div>
+    		<div class="col-lg-6">
+    			<div class="pull-left"><img src="img/hackATLSponsorshipTiers2.png" alt="Sponsorship Tiers" width="550"></div>
+    		</div> -->
+  <!--   	</div> -->
+<!--   		</font>
+ --> 
+
+	
+      <hr>
+	
+	<div class="container">
+      <footer>
+        <div class="pull-left"><p>&copy; 2013 hack<text class="text-success">ATL</text> | <a href="http://eevm.org">Emory Entrepreneurship & Venture Management</a> | <a href="http://emory.edu">Emory University</a></p></div>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
